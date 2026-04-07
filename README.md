@@ -66,7 +66,7 @@ interface gigabitEthernet 0/0.30
 encapsulation dot1Q 30
 ip address 192.168.30.1 255.255.255.0
 
-![Router Config](./screenshots/router-config.png)
+![Router Config](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20131345.png)
 
 ### Access Control Configuration
 Implemented ACL to restrict HR from accessing IT while allowing other traffic
