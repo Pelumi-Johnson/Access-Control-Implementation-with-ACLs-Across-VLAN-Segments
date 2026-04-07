@@ -44,7 +44,7 @@ switchport mode trunk
 exit
 ```
 Screenshot Placeholder Trunk Verification
-![Trunk Verification](./screenshots/trunk.png)
+![Trunk Verification](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20130703.png)
 
 ### Router Subinterfaces
 Configured Router on a Stick for all VLANs including newly added VLAN 30
