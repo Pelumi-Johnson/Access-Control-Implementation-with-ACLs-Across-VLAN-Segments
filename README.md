@@ -86,7 +86,7 @@ ip access-group 10 in
 ### Access Control Testing
 From VLAN 10 HR
 ping 192.168.20.10
-Result request timed out confirming traffic restriction from HR to IT
+Destination host unreachable confirming traffic restriction from HR to IT
 
 From VLAN 20 IT
 ping 192.168.10.10
