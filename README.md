@@ -23,7 +23,7 @@ PC2 assigned to VLAN 30 Finance
 Switch connected to router via trunk link FastEthernet0/24 to GigabitEthernet0/0
 Router configured with subinterfaces for VLAN routing
 
-![Network Topology](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-07%20152357.png)
+![Network Topology](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-07%20153850.png)
 
 ## Configuration
 
