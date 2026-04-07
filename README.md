@@ -13,14 +13,17 @@ Devices Used
 3 End Devices PCs
 
 Topology Design
+
 PC0 assigned to VLAN 10 HR
+
 PC1 assigned to VLAN 20 IT
+
 PC2 assigned to VLAN 30 Finance
+
 Switch connected to router via trunk link FastEthernet0/24 to GigabitEthernet0/0
 Router configured with subinterfaces for VLAN routing
 
-Screenshot Placeholder Topology
-![Network Topology](./screenshots/topology.png)
+![Network Topology](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20130055.png)
 
 ## Configuration
 
