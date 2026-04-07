@@ -79,7 +79,7 @@ access-list 10 permit any
 interface gigabitEthernet 0/0.20
 ip access-group 10 in
 
-![ACL Config](./screenshots/acl-config.png)
+![ACL Config](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20131923.png)
 
 ## Validation
 
