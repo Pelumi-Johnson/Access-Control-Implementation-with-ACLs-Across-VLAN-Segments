@@ -31,9 +31,6 @@ Router configured with subinterfaces for VLAN routing
 Configured VLAN 10 HR VLAN 20 IT and VLAN 30 Finance
 Assigned switch access ports to respective VLANs
 
-Screenshot Placeholder VLAN Setup
-![VLAN Setup](./screenshots/vlan-setup.png)
-
 ### Trunk Configuration
 Configured uplink port to carry VLAN traffic between switch and router
 ```
