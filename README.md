@@ -86,11 +86,15 @@ ip access-group 10 in
 ### Access Control Testing
 From VLAN 10 HR
 ping 192.168.20.10
-Result request timed out confirming traffic restriction
+Result request timed out confirming traffic restriction from HR to IT
 
 From VLAN 20 IT
 ping 192.168.10.10
-Result successful confirming permitted return traffic
+Result failed due to ACL behavior where HR could receive traffic but could not respond back to IT
+
+Observed Behavior
+HR was restricted from initiating traffic to IT and also unable to complete return communication
+Resulting in failed bidirectional communication despite IT being permitted
 
 Screenshot Placeholder ACL Test Failure
 ![ACL Block](./screenshots/acl-block.png)
@@ -98,14 +102,35 @@ Screenshot Placeholder ACL Test Failure
 Screenshot Placeholder ACL Test Success
 ![ACL Allow](./screenshots/acl-allow.png)
 
-### VLAN 30 Controlled Communication
-Validated VLAN 30 Finance could communicate with both VLAN 10 and VLAN 20 after being introduced post ACL configuration
-Confirmed HR remained restricted from IT while Finance maintained access to both segments
+### ACL Policy Refinement
+Updated ACL to specifically deny traffic from VLAN 10 HR to VLAN 20 IT while allowing all other communication
 ```
+enable
+configure terminal
+access-list 100 deny ip 192.168.10.0 0.0.0.255 192.168.20.0 0.0.0.255
+access-list 100 permit ip any any
+```
+Applied ACL to appropriate router subinterface to enforce directional control
+
+Result
+HR remained restricted from communicating with IT
+Other VLAN communications were preserved
+
+### VLAN 30 Controlled Communication
+Introduced VLAN 30 Finance after ACL validation to enable controlled communication across both VLAN 10 and VLAN 20
+
+Configured VLAN 30 with dedicated subnet and router subinterface
+Validated that Finance could initiate and receive communication with both HR and IT
+
 ping 192.168.10.10
 ping 192.168.20.10
-```
-Result successful confirming routing functionality
+
+Result successful confirming full connectivity for VLAN 30
+
+Confirmed Behavior
+HR cannot initiate communication to IT
+Finance can communicate with both HR and IT
+HR can respond to Finance traffic due to ACL permitting non restricted traffic
 
 Screenshot Placeholder VLAN 30 Test
 ![VLAN30 Ping](./screenshots/vlan30-ping.png)
@@ -113,13 +138,31 @@ Screenshot Placeholder VLAN 30 Test
 ### Troubleshooting Scenario
 Encountered connectivity failure after adding VLAN 30 device
 
-- Observed request timeouts despite correct router subinterface configuration
-- Executed tracert to analyze packet path and confirmed traffic was not reaching router subinterface
-- Verified trunk configuration was active and passing VLAN traffic
-- Identified missing VLAN assignment on switch access port connected to PC2
-- Assigned switch port to VLAN 30 aligning Layer 2 configuration with Layer 3 routing
-- Restored connectivity and validated successful communication across all VLANs
+Observed request timeouts despite correct router subinterface configuration
+Executed tracert to analyze packet path and confirmed traffic was not reaching router subinterface
+Verified trunk configuration was active and passing VLAN traffic
+Identified missing VLAN assignment on switch access port connected to PC2
+Assigned switch port to VLAN 30 aligning Layer 2 configuration with Layer 3 routing
+Restored connectivity and validated successful communication across all VLANs
 
+Screenshot Placeholder Failed Tracert
+![Tracert Failure](./screenshots/tracert-fail.png)
+
+Screenshot Placeholder Fixed Connectivity
+![Tracert Success](./screenshots/tracert-success.png)
+
+## Key Concepts Applied
+- Extended ACL configuration for precise traffic filtering between specific source and destination networks
+- Directional traffic control using inbound ACL application
+- Router on a Stick architecture for multi VLAN routing
+- Incremental network expansion with policy validation before scaling
+- VLAN segmentation and port assignment alignment
+- Traffic flow validation using ping and tracert
+- Layer 2 misconfiguration impact on Layer 3 communication
+- ACL processing order and rule specificity
+
+## Outcome
+Implemented granular inter VLAN access control preventing HR from communicating with IT while maintaining controlled communication paths across the network. Refined ACL policy to target specific traffic flows and introduced VLAN 30 to enable structured communication across both segments without violating security constraints. Resolved misconfigurations through systematic troubleshooting reflecting real world network enforcement and operational precision.
 Screenshot Placeholder Failed Tracert
 ![Tracert Failure](./screenshots/tracert-fail.png)
 
