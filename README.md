@@ -100,7 +100,7 @@ ACL Test Failure
 ![ACL Block](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20131708.png)
 
 ACL Test Success
-![ACL Allow](./screenshots/acl-allow.png)
+![ACL Allow](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20131822.png)
 
 ### ACL Policy Refinement
 Updated ACL to specifically deny traffic from VLAN 10 HR to VLAN 20 IT while allowing all other communication
