@@ -167,22 +167,4 @@ Screenshot Placeholder Fixed Connectivity
 - ACL processing order and rule specificity
 
 ## Outcome
-Implemented granular inter VLAN access control preventing HR from communicating with IT while maintaining controlled communication paths across the network. Refined ACL policy to target specific traffic flows and introduced VLAN 30 to enable structured communication across both segments without violating security constraints. Resolved misconfigurations through systematic troubleshooting reflecting real world network enforcement and operational precision.
-Screenshot Placeholder Failed Tracert
-![Tracert Failure](./screenshots/tracert-fail.png)
-
-Screenshot Placeholder Fixed Connectivity
-![Tracert Success](./screenshots/tracert-success.png)
-
-## Key Concepts Applied
-- ACL based traffic filtering to enforce network policy
-- Standard ACL configuration and interface application
-- Router on a Stick architecture for multi VLAN routing
-- Incremental network expansion after validation
-- VLAN segmentation and port assignment alignment
-- Traffic flow validation using ping and tracert
-- Layer 2 misconfiguration impact on Layer 3 communication
-- ACL processing order and interface direction
-
-## Outcome
 Implemented controlled inter VLAN communication enforcing security boundaries between departments while maintaining required access paths. Extended the network by introducing VLAN 30 after initial validation, enabling structured multi network interaction while preserving ACL enforced restrictions. Resolved configuration issues through systematic troubleshooting aligned with real world network operations.
