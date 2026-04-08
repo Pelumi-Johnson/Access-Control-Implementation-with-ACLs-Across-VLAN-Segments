@@ -96,10 +96,10 @@ Observed Behavior
 HR was restricted from initiating traffic to IT and also unable to complete return communication
 Resulting in failed bidirectional communication despite IT being permitted
 
-Screenshot Placeholder ACL Test Failure
+ACL Test Failure
 ![ACL Block](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20131708.png)
 
-Screenshot Placeholder ACL Test Success
+ACL Test Success
 ![ACL Allow](./screenshots/acl-allow.png)
 
 ### ACL Policy Refinement
