@@ -150,8 +150,8 @@ Encountered connectivity failure after adding VLAN 30 device
 - Assigned switch port to VLAN 30 aligning Layer 2 configuration with Layer 3 routing
 - Restored connectivity and validated successful communication across all VLANs
 
-Screenshot Placeholder Failed Tracert
-![Tracert Failure](./screenshots/tracert-fail.png)
+Placeholder Failed Tracert
+![Tracert Failure](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20071344.png)
 
 Screenshot Placeholder Fixed Connectivity
 ![Tracert Success](./screenshots/tracert-success.png)
