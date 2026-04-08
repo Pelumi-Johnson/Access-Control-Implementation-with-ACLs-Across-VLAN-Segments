@@ -138,7 +138,7 @@ HR can respond to Finance traffic due to ACL permitting non restricted traffic
 
 Screenshot Placeholder VLAN 30 Test
 ![VLAN30 Ping](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20133256.png)
-![VLAN30 Ping](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20133256.png)
+![VLAN30 Ping](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20133550.png)
 
 ### Troubleshooting Scenario
 Encountered connectivity failure after adding VLAN 30 device
