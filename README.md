@@ -155,7 +155,7 @@ Placeholder Failed Tracert
 [issue](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20071359.png)
 Fixed Connectivity
 ![Tracert Success](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20071621.png)
-![Tracert Success](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20071621.png)
+![Tracert Success](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20071707.png)
 
 ## Key Concepts Applied
 - Extended ACL configuration for precise traffic filtering between specific source and destination networks
