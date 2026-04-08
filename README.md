@@ -113,7 +113,9 @@ access-list 100 permit ip any any
 Applied ACL to appropriate router subinterface to enforce directional control
 
 Result
+
 HR remained restricted from communicating with IT
+
 Other VLAN communications were preserved
 
 ### VLAN 30 Controlled Communication
@@ -129,7 +131,9 @@ Result successful confirming full connectivity for VLAN 30
 
 Confirmed Behavior
 HR cannot initiate communication to IT
+
 Finance can communicate with both HR and IT
+
 HR can respond to Finance traffic due to ACL permitting non restricted traffic
 
 Screenshot Placeholder VLAN 30 Test
@@ -138,12 +142,12 @@ Screenshot Placeholder VLAN 30 Test
 ### Troubleshooting Scenario
 Encountered connectivity failure after adding VLAN 30 device
 
-Observed request timeouts despite correct router subinterface configuration
-Executed tracert to analyze packet path and confirmed traffic was not reaching router subinterface
-Verified trunk configuration was active and passing VLAN traffic
-Identified missing VLAN assignment on switch access port connected to PC2
-Assigned switch port to VLAN 30 aligning Layer 2 configuration with Layer 3 routing
-Restored connectivity and validated successful communication across all VLANs
+- Observed request timeouts despite correct router subinterface configuration
+- Executed tracert to analyze packet path and confirmed traffic was not reaching router subinterface
+- Verified trunk configuration was active and passing VLAN traffic
+- Identified missing VLAN assignment on switch access port connected to PC2
+- Assigned switch port to VLAN 30 aligning Layer 2 configuration with Layer 3 routing
+- Restored connectivity and validated successful communication across all VLANs
 
 Screenshot Placeholder Failed Tracert
 ![Tracert Failure](./screenshots/tracert-fail.png)
