@@ -152,7 +152,7 @@ Encountered connectivity failure after adding VLAN 30 device
 
 Placeholder Failed Tracert
 ![Tracert Failure](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20071344.png)
-
+[issue](https://github.com/Pelumi-Johnson/Access-Control-Implementation-with-ACLs-Across-VLAN-Segments/blob/main/Screenshot%202026-04-05%20071359.png)
 Screenshot Placeholder Fixed Connectivity
 ![Tracert Success](./screenshots/tracert-success.png)
 
