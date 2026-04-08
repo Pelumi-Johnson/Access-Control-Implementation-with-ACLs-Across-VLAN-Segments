@@ -171,4 +171,4 @@ Fixed Connectivity
 - ACL processing order and rule specificity
 
 ## Outcome
-Implemented controlled inter VLAN communication enforcing security boundaries between departments while maintaining required access paths. Extended the network by introducing VLAN 30 after initial validation, enabling structured multi network interaction while preserving ACL enforced restrictions. Resolved configuration issues through systematic troubleshooting aligned with real world network operations.
+Enforced targeted inter VLAN access control by preventing HR from initiating communication to IT while preserving required traffic flows. Extended the network with VLAN 30 to enable controlled multi segment interaction without violating defined security policies, resulting in a structured and policy driven network design aligned with enterprise practices.
